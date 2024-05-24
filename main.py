@@ -26,7 +26,7 @@ def main():
         elif choice == "4":
             list_tasks()
         elif choice == "5":
-            print("Exiting the program... Goodbye!")
+            print("Exiting the program... Goodbye!\n")
             break
         else:
             print("Invalid choice, please try again.")
