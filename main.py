@@ -1,19 +1,18 @@
-# main.py
-
 from todo import add_task, remove_task, mark_complete, list_tasks
 
 def display_menu():
-    print("\nTo-Do LIST APP")
-    print("\n1. Add Task")
+    print("\n\n====== TO-DO LIST ======")
+    print("1. Add Task")
     print("2. Remove Task")
     print("3. Mark Task as Complete")
     print("4. List Tasks")
     print("5. Exit")
+    print("=========================")
 
 def main():
     while True:
         display_menu()
-        choice = input("\nChoose an option: ")
+        choice = input("Choose an option: ")
         print()
         if choice == "1":
             description = input("Enter task description: ")
@@ -27,6 +26,7 @@ def main():
         elif choice == "4":
             list_tasks()
         elif choice == "5":
+            print("Exiting the program... Goodbye!")
             break
         else:
             print("Invalid choice, please try again.")
